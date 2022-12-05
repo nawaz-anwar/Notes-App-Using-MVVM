@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewNotes">
+
+
+    <EditText
+        android:id="@+id/edtNotesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/edtSubNotesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        android:hint="Sub-Title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/notesPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/greenPriority"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@color/green"
+            android:src="@drawable/ic_baseline_check_24"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/redPriority"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@color/red"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/yellowPriority"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@color/yellow"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtNotes"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        android:hint="Notes" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addNewNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/ic_baseline_check_24" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
