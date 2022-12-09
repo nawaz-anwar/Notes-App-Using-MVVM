@@ -1,4 +1,4 @@
-package com.coetusstudio.notes;
+package com.coetusstudio.notes.Model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
